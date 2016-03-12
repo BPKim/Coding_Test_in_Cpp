@@ -79,7 +79,10 @@
     <ClCompile Include="01_FrogJump_SCPC2015-1-1.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="02_Mirror_In_The_Room_SCPC2015-2.cpp" />
+    <ClCompile Include="02_Mirror_In_The_Room_SCPC2015-2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="algospot_FESTIVAL.cpp" />
     <ClCompile Include="gogaon.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -100,6 +103,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <Text Include="festivalinput.txt" />
     <Text Include="input.txt" />
     <Text Include="mirrorinput.txt" />
   </ItemGroup>

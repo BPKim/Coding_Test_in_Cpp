@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-long long selectSort(long long * array, int length){
+double double selectSort(double double * array, int length){
 
 	int minIdx;
 	int j;
@@ -24,27 +24,27 @@ int main(){
 	int testcase =0;
 	int i, j=0, n, m;
 	int N, M;
-	long long **table;
-	long long *resultTable;
-	long long result;
-	long long *low_point_table;
-	long long lowpoint;
+	double double **table;
+	double double *resultTable;
+	double double result;
+	double double *low_point_table;
+	double double lowpoint;
 
 	scanf("%d", &testcase);
 	scanf("%d %d", &N, &M);
 
 	for (i = 0 ; i < testcase; i++){
 		
-		resultTable = (long long*)malloc(sizeof(long long)*M);
+		resultTable = (double double*)malloc(sizeof(double double)*M);
 
 		for (m = 0; m < M; m++){
 			resultTable[m] = 0;
 			
 		}
 
-		table = (long long**)malloc(sizeof(long long)*N);
+		table = (double double**)malloc(sizeof(double double)*N);
 		for ( n = 0; n < N; n ++)
-			table[n] = (long long*)malloc(sizeof(long long)*(M * 2));
+			table[n] = (double double*)malloc(sizeof(double double)*(M * 2));
 
 		for (n = 0; n < N; n++){
 			for (m = 0; m < M*2; m++)
@@ -71,7 +71,7 @@ int main(){
 
 		/// 포인트 가장 작은거 찾아서 더하기만 하면 됨 
 		for (m = 1; m < M * 2; m=m+2){
-			low_point_table = (long long*)malloc(sizeof(long long)*N);
+			low_point_table = (double double*)malloc(sizeof(double double)*N);
 
 			for (n = 0; n < N; n++){
 				low_point_table[n] = table[n][m];
